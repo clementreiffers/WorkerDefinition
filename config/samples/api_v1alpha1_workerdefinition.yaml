@@ -1,0 +1,15 @@
+apiVersion: api.worker-definition/v1alpha1
+kind: WorkerDefinition
+metadata:
+  labels:
+    app.kubernetes.io/name: workerdefinition
+    app.kubernetes.io/instance: workerdefinition-sample
+    app.kubernetes.io/part-of: workerdefinition
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: workerdefinition
+  name: workerdefinition-sample
+spec:
+  accounts: "1234"
+  project: "wasm-worker"
+  version-used: "v1"
+  image-name: "1234.wasm-worker:v1"
