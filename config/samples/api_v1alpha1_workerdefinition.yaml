@@ -11,5 +11,5 @@ metadata:
 spec:
   accounts: "1234"
   project: "wasm-worker"
-  version-used: "v1"
+  version-used: 1
   image-name: "1234.wasm-worker:v1"

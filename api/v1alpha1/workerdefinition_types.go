@@ -27,7 +27,7 @@ import (
 type WorkerDefinitionSpec struct {
 	Accounts    string `json:"accounts"`
 	Project     string `json:"project"`
-	VersionUsed string `json:"version-used"`
+	VersionUsed int    `json:"version-used"`
 	ImageName   string `json:"image-name"`
 }
 
