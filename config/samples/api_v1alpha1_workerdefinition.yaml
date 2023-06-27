@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/created-by: workerdefinition
   name: workerdefinition-sample
 spec:
-  accounts: "1234"
-  project: "wasm-worker"
-  version-used: 1
-  image-name: "1234.wasm-worker:v1"
+  accounts: "1234" # related customer account
+  project: "wasm-worker" # worker-name
+  current-deployment: "8e9375ab-dbff-4628-950f-7e384be9ead0"

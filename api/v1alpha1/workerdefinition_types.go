@@ -25,10 +25,9 @@ import (
 
 // WorkerDefinitionSpec defines the desired state of WorkerDefinition
 type WorkerDefinitionSpec struct {
-	Accounts    string `json:"accounts"`
-	Project     string `json:"project"`
-	VersionUsed int    `json:"version-used"`
-	ImageName   string `json:"image-name"`
+	Accounts          string `json:"accounts"`
+	Project           string `json:"project"`
+	CurrentDeployment string `json:"current-deployment"`
 }
 
 // WorkerDefinitionStatus defines the observed state of WorkerDefinition
