@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/part-of: workerdefinition
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/created-by: workerdefinition
-  name: workerdefinition-sample
+  name: "1234.wasm-worker"
 spec:
   accounts: "1234" # related customer account
   project: "wasm-worker" # worker-name

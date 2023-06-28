@@ -21,7 +21,6 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	apiv1alpha1 "operators/WorkerDefinition/api/v1alpha1"
 
-	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
@@ -59,9 +58,7 @@ func (r *WorkerDefinitionReconciler) Reconcile(ctx context.Context, req ctrl.Req
 		}
 		return ctrl.Result{}, err
 	}
-
-	crd := &corev1.Pod{}
-
+	logger.Info("created!")
 	return ctrl.Result{}, nil
 }
 
